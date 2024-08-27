@@ -1,0 +1,92 @@
+html { color: $iron;
+       font-family: $main;
+       font-weight: 500;
+       background-color: $background;
+       hyphens: auto;
+       font-size: $small;
+       line-height: 2em; }
+
+a { font-weight: bold;
+    color: $iron;
+    //box-shadow: inset 0 -8px 0 #a3ffdd, 0 1px 0 #a3ffdd;
+    //box-shadow: inset 0 -8px 0 #b4f9fc, 0 1px 0 #b4f9fc;
+    //text-decoration: none;
+    text-decoration: underline $grey;
+    &:hover { @include default-hover; }}
+
+::selection { color: #ffffff;
+              background: #39c5ca; }
+
+pre { width: 95%;
+      margin: 0 auto;
+      box-shadow: 0px 0px 3px $shadowblue; }
+
+img { margin: 20px auto;
+      display: block;
+      box-shadow: 1px 5px 20px $shadowblue;
+      max-width: 60%; }
+
+.img-left { margin-left: 40px;
+            width: 25%; }
+
+iframe { display: block;
+         margin: 10px auto;
+         overflow: scroll;
+         max-width: 100%;
+         border: none; }
+
+.top { padding: 0 10px 1px 10px;
+       margin: 0 -10px 40px -10px;
+       box-shadow: 0 14px 9px -9px $shadowblue; }
+
+.pull-right { text-align: right; }
+
+blockquote { text-align: center;
+             padding: 3px 0 0 0; }
+
+hr { border: 0.5em solid #fff;
+     box-shadow: 0 6px 3px -3px $shadowblue; }
+
+code { @include small-pad;
+       font-family: $mono;
+       margin: 2px auto;
+       color: $iron;
+       font-weight: 500;
+       background-color: #fff;
+       border-radius: 4px;
+       box-shadow: 0.5px 1px 1px $shadowblue; }
+
+.wrapper { max-width: 63vw;
+           margin: 0 auto; }
+
+.social { text-align: right;
+          color: #000000; 
+          font-size: 110%;
+          margin: 50px 0 10px 0;
+          a { text-decoration: none; }}
+
+.page-content { box-shadow: -15px 0px 15px -15px $shadowblue;
+                padding: 85px 0 20px 55px;
+                margin: -95px 0 20px 5vw; }
+
+.post { margin: 0 auto;
+        code { box-shadow: 0px 1px 3px $shadowblue; }}
+
+.twitter { margin-bottom: 30px; }
+
+.post-title { line-height: 1.5em; text-align: left; }
+
+.list-posts { text-transform: lowercase;
+              list-style-type: none;
+              li { margin: 5px 0 5px 0; }}
+
+#markdown-toc { li { margin: 5px 0 5px 0; }
+                a { font-style: italic; }
+                line-height: 2em;
+                list-style-type: none; }
+
+@media ( max-width: $breakpoint ) { .page-content { margin: -95 0 0 2vw; padding: 70px 0 20px 30px; }
+                                     html { font-size: 85%; }
+                                     img { max-width: 100%; }
+                                    .img-left { width: 40% }
+                                    .post, .wrapper { max-width: 90vw; }}

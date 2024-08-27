@@ -1,0 +1,31 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { font-family: $mono;
+     font-weight: 700; 
+     letter-spacing: 0.3px;
+     word-spacing: 1px;
+     line-height: 1.5em; }
+
+h1,
+h2 { color: $aquamarine;
+     font-family: $main;
+     text-shadow: 1px 1px 1px $shadowblue; }
+
+h3,
+h4 { color: $aquamarine;
+     text-shadow: 0.5px 0.5px 0.5px $shadowblue;
+     font-size: $large; }
+
+h5 { font-size: $small; 
+     a { border: 1px solid #dfebff;
+         text-decoration: none; 
+         box-shadow: 5px 5px 5px $shadowblue;
+         line-height: 2.01em;
+         padding: 3px 12px 3px 12px; }}
+
+h6 { font-size: $small;
+     font-weight: normal; 
+     color: $grey; }

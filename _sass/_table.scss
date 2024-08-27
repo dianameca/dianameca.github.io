@@ -1,0 +1,20 @@
+table { width: 100%;
+        text-align: left;
+        font-size: $tiny;
+        line-height: 1.6em;
+        margin: 0 0 20px 0;
+        border-collapse: collapse;
+        strong { text-decoration : underline; }
+        em { font-weight: bold; font-style: normal; }
+        img { max-width: 97%; }
+        tr:nth-child { background-color: $background; }
+
+        th,
+        td { padding: 5px 0 5px 0; }
+
+        th { background-color: $aquamarine;
+             border: 3px solid $background;
+             font-size: $tiny;
+             text-align: center;
+             color: white; }}
+

@@ -1,0 +1,8 @@
+title: Diana Meca
+url: https://dianameca.ca
+permalink: /:title/
+highlightstyle: 'atelier-lakeside-light'
+safe: true
+markdown: kramdown
+sass:
+  cache: false

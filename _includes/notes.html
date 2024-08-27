@@ -1,0 +1,13 @@
+
+<div class="list-posts">
+   {% for post in site.posts %} {% capture currentdate %} 
+   <!--<li>{{post.date | date: "%Y"}}</li>-->
+   {% endcapture %} {% if currentdate != thedate %} {{ currentdate }} {% capture thedate %}{{ currentdate }}{% endcapture %} {% endif %}
+   <li>
+      <a href="{{ post.url | prepend: site.baseurl }}">
+         {{ post.title }}
+      </a>
+   </li>
+   {% endfor %}
+</div>
+
